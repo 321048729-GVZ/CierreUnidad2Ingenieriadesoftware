@@ -1,7 +1,7 @@
 # Cierre de Unidad 2 — [nombre del equipo]
 
-**Sistema:** [nombre corto del sistema]
-**Integrantes:** [nombres completos]
+**Sistema:** Sistema de registro de ventas para negocios minoristas.
+**Integrantes:** González vargas Alfredo Zenif
 **Fecha:** 21 de septiembre de 2026
 
 ## 2.4 Propuesta de desarrollo

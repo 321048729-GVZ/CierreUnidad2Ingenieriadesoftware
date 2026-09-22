@@ -14,35 +14,35 @@ cursor = conexion.cursor()
 # COMPLETAR: nombren la tabla segun el objeto central de su sistema,
 # y definan 3 o 4 columnas relevantes (ademas de id)
 cursor.execute("""
-    CREATE TABLE IF NOT EXISTS NOMBRE_TABLA (
+    CREATE TABLE IF NOT EXISTS PRODUCTOS (
         id INTEGER PRIMARY KEY,
-        COLUMNA_1 TEXT,
-        COLUMNA_2 TEXT,
-        COLUMNA_3 TEXT
+        BARCODE TEXT,
+        ARTICULO TEXT,
+        PRECIO REAL
     )
 """)
 
 # COMPLETAR: inserten 3 registros de ejemplo con datos realistas de
 # su propio sistema (no datos inventados tipo "prueba1", "prueba2")
 cursor.executemany(
-    "INSERT INTO NOMBRE_TABLA (COLUMNA_1, COLUMNA_2, COLUMNA_3) VALUES (?, ?, ?)",
+    "INSERT INTO PRODUCTOS (BARCODE, ARTICULO, PRECIO) VALUES (?, ?, ?)",
     [
-        ("VALOR_1", "VALOR_2", "VALOR_3"),
-        ("VALOR_1", "VALOR_2", "VALOR_3"),
-        ("VALOR_1", "VALOR_2", "VALOR_3"),
+        ("457190", "Galletas Mini Barritas Fresa", 30.00),
+        ("0044605", "Detergente Roma 1kg", 34.00),
+        ("044202", "Atún Nair 120g", 12.00),
     ]
 )
 conexion.commit()
 
 # Consulta 1: todos los registros
 print("--- Todos los registros ---")
-for fila in cursor.execute("SELECT * FROM NOMBRE_TABLA"):
+for fila in cursor.execute("SELECT * FROM PRODUCTOS"):
     print(fila)
 
 # COMPLETAR: escriban una segunda consulta que filtre por alguna
 # condicion relevante a su sistema (usen WHERE)
 print("--- Consulta filtrada ---")
-for fila in cursor.execute("SELECT * FROM NOMBRE_TABLA WHERE CONDICION"):
+for fila in cursor.execute("SELECT * FROM PRODUCTOS WHERE BARCODE == 457190"):
     print(fila)
 
 conexion.close()
