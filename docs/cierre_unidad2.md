@@ -23,7 +23,7 @@
 
 ## 2.6 Entorno de desarrollo justificado
 
-- **Evidencia técnica:** enlace al commit (Link al commit)[https://github.com/321048729-GVZ/CierreUnidad2Ingenieriadesoftware/blob/main/prototipo_entorno.py]
+- **Evidencia técnica:** enlace al commit [Link al commit](https://github.com/321048729-GVZ/CierreUnidad2Ingenieriadesoftware/blob/main/prototipo_entorno.py])
 - **Costo:** Nulo durante la fase de desarrollo. Se utilizan bases de datos locales (SQLite) y lenguajes de programación de código abierto sin requerir licenciamiento comercial.
 - **Curva de aprendizaje:** Moderada. Requiere la integración estructurada de bases de datos relacionales, lógica de servidor (API) y diseño de interfaz frontend, conceptos que se dominan progresivamente durante el ciclo escolar.
 - **Soporte / documentación disponible:** Extensa y de alta calidad. Al utilizar arquitecturas estándar (API REST) y bases de datos consolidadas, existe una vasta cantidad de foros técnicos, documentación oficial y herramientas de depuración.
